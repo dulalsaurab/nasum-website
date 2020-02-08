@@ -1,0 +1,69 @@
+safe: false
+source: .
+destination: ./_site
+plugins_dir: ./_plugins
+highlighter: rouge
+markdown: kramdown
+exclude: ['_DOCS', '_SCRIPTS', '.travis.yml', '.travis.d', '.sass-cache', 'Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'LICENSE.md']
+
+plugins:
+  - jekyll-assets
+
+url: http://arcturus.memphis.edu
+baseurl: /nepalinights
+
+# Configuration for site
+title: Nepali Cultural Night
+
+# google_analytics_id: UA-83529610-1
+
+program:
+  # If the specified file doesn't exist, there will be command-line dialog to create it
+  # (Currently hardcoded for a dummy robot.mcrobot.jr@gmail.com account permissions)
+  google_client_id: .travis.d/google_client_id.json
+  # Google spreadsheet with the conference data
+  spreadsheet:
+    # - "1Xc1VgfPRRtTX7gmRYZ_GW6iqk-R6yWzuX_pOD6FQvBM" # main
+
+# Configuration for navbar.html
+menu:
+- name: Home
+  url: /
+  icon: fa-home
+- name: Program
+  url: /program.html
+  icon: fa-list-ul
+- name: Contacts
+  icon: fa-map
+  url: /contacts.html
+
+- name: ">> Registration <<"
+  icon: "fas fa-cash-register"
+  # url: https://www.eventbrite.com/e/12th-ndn-retreat-tickets-92276327981
+
+colors:
+  highlight: 2E85C2
+  highlight-darker: 2E85C2
+  hfont: F9E90C
+
+  program:
+    break-background: d1d1d1
+
+assets:
+  caching:
+    path: .sass-cache/assets
+  features:
+    automatic_img_size: false
+
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/fonts
+    - _assets/js
+    - _assets/bower
+    - _assets/calls
+
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+      - "IE > 9"
