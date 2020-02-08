@@ -36,8 +36,8 @@ menu:
 - name: Contacts
   icon: fa-map
   url: /contacts.html
-- name: rehershal
-  icon: fa-calendar-alt
+- name: Rehearsal Schedule
+  icon: fa-calendar
   url: /rehershal.html
 
 - name: ">> Registration <<"
