@@ -36,6 +36,9 @@ menu:
 - name: Contacts
   icon: fa-map
   url: /contacts.html
+- name: rehershal
+  icon: fa-calendar-alt
+  url: /rehershal.html
 
 - name: ">> Registration <<"
   icon: "fas fa-cash-register"
